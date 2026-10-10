@@ -1,0 +1,73 @@
+name: Extract Electronics ZIP
+
+on:
+  push:
+    paths:
+      - "*.zip"
+      - "**/*.zip"
+      - ".github/workflows/extract-zip.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract ZIP files
+        shell: bash
+        run: |
+          set -e
+
+          mkdir -p /tmp/electronics-extract
+
+          ZIP_FILE=$(find . -maxdepth 1 -type f \
+            -iname "*.zip" | head -n 1)
+
+          if [ -z "$ZIP_FILE" ]; then
+            echo "No ZIP file found in repository root."
+            exit 1
+          fi
+
+          echo "Extracting: $ZIP_FILE"
+
+          unzip -o "$ZIP_FILE" -d /tmp/electronics-extract
+
+          SOURCE=/tmp/electronics-extract
+
+          # Remove a single enclosing folder if present
+          ITEMS=$(find "$SOURCE" -mindepth 1 -maxdepth 1 | wc -l)
+
+          if [ "$ITEMS" -eq 1 ] && \
+             [ -d "$(find "$SOURCE" -mindepth 1 -maxdepth 1)" ]; then
+            SOURCE=$(find "$SOURCE" -mindepth 1 -maxdepth 1)
+          fi
+
+          # Copy website files into repository root
+          cp -a "$SOURCE"/. .
+
+          echo "Extracted files:"
+          ls -la
+
+          if [ ! -f package.json ] && \
+             [ ! -f index.html ]; then
+            echo "Warning: No package.json or index.html at root."
+            echo "Check the extracted folder structure."
+          fi
+
+      - name: Commit extracted website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git diff --cached --quiet || \
+            git commit -m "Extract electronics website files"
+
+          git push
