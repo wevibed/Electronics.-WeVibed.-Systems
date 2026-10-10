@@ -18,29 +18,26 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
-      - name: Extract ZIP files
+      - name: Extract website ZIP
         shell: bash
         run: |
           set -e
-
-          mkdir -p /tmp/electronics-extract
 
           ZIP_FILE=$(find . -maxdepth 1 -type f \
             -iname "*.zip" | head -n 1)
 
           if [ -z "$ZIP_FILE" ]; then
-            echo "No ZIP file found in repository root."
+            echo "ERROR: No ZIP file found in repository root."
             exit 1
           fi
 
-          echo "Extracting: $ZIP_FILE"
+          mkdir -p /tmp/electronics-site
+          unzip -o "$ZIP_FILE" -d /tmp/electronics-site
 
-          unzip -o "$ZIP_FILE" -d /tmp/electronics-extract
-
-          SOURCE=/tmp/electronics-extract
-
-          # Remove a single enclosing folder if present
+          SOURCE="/tmp/electronics-site"
           ITEMS=$(find "$SOURCE" -mindepth 1 -maxdepth 1 | wc -l)
 
           if [ "$ITEMS" -eq 1 ] && \
@@ -48,26 +45,32 @@ jobs:
             SOURCE=$(find "$SOURCE" -mindepth 1 -maxdepth 1)
           fi
 
-          # Copy website files into repository root
           cp -a "$SOURCE"/. .
 
-          echo "Extracted files:"
-          ls -la
-
-          if [ ! -f package.json ] && \
-             [ ! -f index.html ]; then
-            echo "Warning: No package.json or index.html at root."
-            echo "Check the extracted folder structure."
+          if [ ! -f package.json ]; then
+            echo "ERROR: package.json not found at repository root."
+            find . -maxdepth 3 -name package.json
+            exit 1
           fi
 
-      - name: Commit extracted website
+          echo "Website files extracted successfully."
+          ls -la
+
+      - name: Commit website files
+        shell: bash
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
-          git diff --cached --quiet || \
-            git commit -m "Extract electronics website files"
+          git reset -- .github/workflows/
 
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "Extract electronics website files"
+            git push origin HEAD:main
+          else
+            echo "No website changes to comm it."
+          fi
