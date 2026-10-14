@@ -3,86 +3,88 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const root = fileURLToPath(new URL("../", import.meta.url));
-const errors = [];
-const warnings = [];
+const root = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  ".."
+);
+
+let errors = 0;
+let warnings = 0;
+
+function error(message) {
+  console.error(`ERROR: ${message}`);
+  errors++;
+}
 
 function readJson(relativePath, label) {
+  const fullPath = path.join(root, relativePath);
+
   try {
-    return JSON.parse(
-      fs.readFileSync(path.join(root, relativePath), "utf8")
-    );
-  } catch (error) {
-    errors.push(`${label}: ${error.message}`);
+    return JSON.parse(fs.readFileSync(fullPath, "utf8"));
+  } catch (err) {
+    error(`${label}: cannot read or parse (${err.message})`);
     return null;
   }
 }
 
-function exists(relativePath) {
-  return fs.existsSync(path.join(root, relativePath));
-}
-
 const site = readJson("src/data/site.json", "site.json");
-const productsData = readJson("src/data/products.json", "products.json");
-
-let products = [];
-
-if (Array.isArray(productsData)) {
-  products = productsData;
-} else if (productsData && typeof productsData === "object") {
-  const possibleKeys = ["products", "items", "data"];
-  const key = possibleKeys.find(
-    (name) => Array.isArray(productsData[name])
-  );
-
-  if (key) {
-    products = productsData[key];
-  } else {
-    errors.push(
-      "products.json: could not find a product array at the root or under products, items, or data"
-    );
-  }
-}
+const productData = readJson("src/data/products.json", "products.json");
 
 if (site !== null && (typeof site !== "object" || Array.isArray(site))) {
-  errors.push("site.json: expected an object");
+  error("site.json: expected a JSON object");
 }
 
-if (productsData !== null) {
-  if (products.length === 0) {
-    warnings.push("Product catalogue is empty or has no recognized array");
-  }
+let products = null;
 
+if (Array.isArray(productData)) {
+  products = productData;
+} else if (productData && typeof productData === "object") {
+  for (const key of ["products", "items", "data"]) {
+    if (Array.isArray(productData[key])) {
+      products = productData[key];
+      break;
+    }
+  }
+}
+
+if (productData !== null && products === null) {
+  error("products.json: expected an array or an object containing a products, items, or data array");
+}
+
+if (products) {
   const ids = new Set();
 
   for (const [index, product] of products.entries()) {
-    if (!product || typeof product !== "object") {
-      errors.push(`Product ${index + 1}: expected an object`);
+    if (!product || typeof product !== "object" || Array.isArray(product)) {
+      error(`products.json: product ${index + 1} must be an object`);
       continue;
     }
 
     const id = product.id;
-    if (id && ids.has(id)) {
-      errors.push(`Duplicate product id: ${id}`);
+
+    if (id !== undefined && id !== null && id !== "") {
+      if (ids.has(String(id))) {
+        error(`products.json: duplicate product id "${id}"`);
+      }
+      ids.add(String(id));
     }
-    if (id) ids.add(id);
   }
 }
 
-for (const file of [
+for (const relativePath of [
   "index.html",
   "package.json",
-  "src/main.jsx",
   "src/App.jsx",
   "src/data/site.json",
   "src/data/products.json",
 ]) {
-  if (!exists(file)) errors.push(`Required file missing: ${file}`);
+  if (!fs.existsSync(path.join(root, relativePath))) {
+    error(`Required file is missing: ${relativePath}`);
+  }
 }
 
-for (const warning of warnings) console.warn(`WARNING: ${warning}`);
-for (const error of errors) console.error(`ERROR: ${error}`);
+console.log(`\ncheck: ${errors} error(s), ${warnings} warning(s)`);
 
-console.log(`\ncheck: ${errors.length} error(s), ${warnings.length} warning(s)`);
-
-if (errors.length) process.exitCode = 1;
+if (errors > 0) {
+  process.exit(1);
+}

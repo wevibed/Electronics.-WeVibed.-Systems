@@ -1,17 +1,17 @@
 /* Electronics: dark glass theme. */
 :root {
-  --page: #07131F;
-  --ink: #EAF2F8;
-  --muted: #9FB2C4;
+  --page: #071322;
+  --ink: #F3F8FF;
+  --muted: #B5C7DB;
   --accent: #FF8A00;
-  --accent-ink: #07131F;
-  --glass-bg: rgba(255,255,255,.07);
-  --glass-border: rgba(255,255,255,.16);
-  --glass-shadow: 0 12px 40px rgba(0,0,0,.35);
-  --glass-dark-bg: rgba(10,30,46,.62);
-  --glass-strong-bg: rgba(12,30,46,.92);
-  --scrim: linear-gradient(to top, rgba(4,10,18,.8), rgba(4,10,18,.1) 65%);
-  --hero-gradient: radial-gradient(circle at 75% 30%, #00C2D6 0, transparent 40%), radial-gradient(circle at 20% 70%, #2F5BFF 0, transparent 45%), linear-gradient(160deg, #0A2236, #06101B);
+  --accent-ink: #071322;
+  --glass-bg: rgba(203,226,255,.105);
+  --glass-border: rgba(224,241,255,.28);
+  --glass-shadow: 0 16px 44px rgba(0,12,32,.22);
+  --glass-dark-bg: rgba(11,29,55,.68);
+  --glass-strong-bg: rgba(10,25,47,.94);
+  --scrim: linear-gradient(90deg, rgba(5,16,37,.76) 0%, rgba(7,22,47,.54) 46%, rgba(6,17,37,.16) 100%), linear-gradient(0deg, rgba(4,12,27,.52), transparent 48%);
+  --hero-gradient: radial-gradient(ellipse at 78% 25%, rgba(177,224,255,.68) 0, rgba(83,160,232,.28) 17%, transparent 43%), radial-gradient(ellipse at 44% 4%, rgba(215,239,255,.52) 0, transparent 32%), radial-gradient(ellipse at 17% 75%, rgba(68,142,230,.36) 0, transparent 43%), linear-gradient(125deg, #182F55 0%, #203F69 38%, #0B1D3B 76%, #071322 100%);
   --font-display: 'Sora', system-ui, sans-serif;
   --font-body: 'IBM Plex Sans', system-ui, sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
@@ -25,7 +25,7 @@
   --tint-4: linear-gradient(135deg, #5A3A0B, #1E2E6B);
   --tint-5: linear-gradient(135deg, #1E2E6B, #0E5560);
 }
-.blobs span:nth-child(1) { background: #00A8BA; }
+.blobs span:nth-child(1) { background: #A9DFFF; }
 .blobs span:nth-child(3) { opacity: .35; }
 .tint-0, .tint-1, .tint-2, .tint-3, .tint-4, .tint-5 { color: #EAF2F8; }
 .mono { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
