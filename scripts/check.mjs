@@ -67,6 +67,16 @@ if (site) {
   if (!site.seo?.ogImage) live ? err("LIVE BLOCKED: seo.ogImage is missing (link previews need a 1200x630 PNG or JPG)") : warn("seo.ogImage not set, shared links will have no preview picture");
 }
 
+if (site?.visit?.photos) {
+  for (const key of ["exterior", "interior"]) {
+    const image = site.visit.photos[key];
+    if (!image) err(`site.json: visit.photos.${key} is missing`);
+    else if (!existsSync(join(root, "public", String(image).replace(/^\//, "")))) {
+      err(`site.json: visit.photos.${key} points to a file that does not exist: ${image}`);
+    }
+  }
+}
+
 if (catalogue) {
   const items = catalogue.items;
   if (!Array.isArray(items) || items.length === 0) err("products.json: needs a non-empty items array");

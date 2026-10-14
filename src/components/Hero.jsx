@@ -1,32 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
-// Full-bleed hero. Uses site.hero.image when set, otherwise the template's gradient. Text sits in front.
+// Static hero background avoids scroll-linked JavaScript and layout work.
 export default function Hero({ site, children }) {
-  const bg = useRef(null);
   const { hero } = site;
-
-  useEffect(() => {
-    const el = bg.current;
-    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!el || reduce) return undefined;
-    let raf = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        el.style.transform = `translate3d(0, ${Math.min(window.scrollY, 800) * 0.18}px, 0)`;
-      });
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(raf);
-    };
-  }, []);
-
   return (
     <header className="hero" id="top">
-      <div className="hero-bg" ref={bg}>
-        {hero.image ? <img src={hero.image} alt={hero.imageAlt || ""} fetchpriority="high" /> : null}
+      <div className="hero-bg">
+        {hero.image ? <img src={`/${hero.image.replace(/^\//, "")}`} alt={hero.imageAlt || ""} fetchPriority="high" decoding="async" /> : null}
       </div>
       <div className="hero-scrim" />
       <div className="hero-inner">

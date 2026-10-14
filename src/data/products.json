@@ -9,7 +9,7 @@
       "price": 219,
       "availability": "in",
       "tint": 0,
-      "image": "",
+      "image": "images/products/nova-x5.webp",
       "specs": [
         {
           "label": "Screen",
@@ -47,7 +47,7 @@
       "price": 129,
       "availability": "low",
       "tint": 1,
-      "image": "",
+      "image": "images/products/pixio-a2.webp",
       "specs": [
         {
           "label": "Screen",
@@ -85,7 +85,7 @@
       "price": 549,
       "availability": "in",
       "tint": 2,
-      "image": "",
+      "image": "images/products/kora-book14.webp",
       "specs": [
         {
           "label": "Screen",
@@ -123,7 +123,7 @@
       "price": 399,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/kora-book15.webp",
       "specs": [
         {
           "label": "Screen",
@@ -160,7 +160,7 @@
       "price": 15,
       "availability": "in",
       "tint": 1,
-      "image": "",
+      "image": "images/products/volt-charger.webp",
       "specs": [
         {
           "label": "Output",
@@ -189,7 +189,7 @@
       "price": 8,
       "availability": "in",
       "tint": 0,
-      "image": "",
+      "image": "images/products/nova-case.webp",
       "specs": [
         {
           "label": "Fits",
@@ -218,7 +218,7 @@
       "price": 22,
       "availability": "low",
       "tint": 2,
-      "image": "",
+      "image": "images/products/kora-bag.webp",
       "specs": [
         {
           "label": "Fits",
@@ -248,7 +248,7 @@
       "price": 29,
       "availability": "in",
       "tint": 3,
-      "image": "",
+      "image": "images/products/veltra-buds.webp",
       "specs": [
         {
           "label": "Battery",
@@ -278,7 +278,7 @@
       "price": 35,
       "availability": "out",
       "tint": 4,
-      "image": "",
+      "image": "images/products/veltra-speaker.webp",
       "specs": [
         {
           "label": "Battery",
@@ -307,7 +307,7 @@
       "price": 289,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/pixio-tv43.webp",
       "specs": [
         {
           "label": "Screen",

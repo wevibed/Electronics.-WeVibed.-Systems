@@ -54,6 +54,13 @@ export default function App() {
       .replace("{name}", p.name)
       .replace("{model}", p.model)
       .replace("{price}", price(p));
+  const compareOrderText = shop.compareOrderMessage
+    .replace("{shop}", business.name)
+    .replace("{items}", cmpItems.map((p, i) => `${i + 1}. ${p.name} (${p.model}) — ${price(p)}`).join("\n"));
+  const mapDestination = contact.mapDestination || contact.address || "Harare, Zimbabwe";
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapDestination)}`;
+  const mapEmbedUrl = `https://maps.google.com/maps?q=${encodeURIComponent(mapDestination)}&z=14&output=embed`;
+  const visitMessage = (visit.contactMessage || "Hi {shop}, I have a question about visiting the shop.").replace("{shop}", business.name);
 
   const pickCat = (c) => { setCat(c); setBrand(shop.allLabel); };
   const closeModal = () => setSel(null);
@@ -89,8 +96,8 @@ export default function App() {
           <div className="text-sm text-muted" aria-live="polite">{list.length} {list.length === 1 ? shop.countOne : shop.countMany}</div>
 
           <div className="grid gap-x-4 gap-y-5" style={{ gridTemplateColumns: "repeat(auto-fill,minmax(240px,1fr))" }}>
-            {list.map((p, i) => (
-              <Reveal key={p.id} delay={(i % 4) * 60} className="card glass flex min-w-0 flex-col gap-2.5 rounded-3xl p-3">
+            {list.map((p) => (
+              <article key={p.id} className="card product-card glass flex min-w-0 flex-col gap-2.5 rounded-3xl p-3">
                 <button type="button" onClick={() => setSel(p.id)} aria-label={`${p.name}, ${price(p)}`} className="block overflow-hidden rounded-2xl p-0 border-0 bg-transparent text-inherit text-left">
                   <ProductPhoto product={p} />
                 </button>
@@ -101,11 +108,15 @@ export default function App() {
                   <span className="font-display text-xl font-bold">{price(p)}</span>
                   <span className={avClass(p)}>{avLabel(p)}</span>
                 </div>
+                <div className="product-actions px-1 pt-1">
+                  <button type="button" className="btn btn-card-secondary" onClick={() => setSel(p.id)}>{shop.viewDetails}</button>
+                  <a className="btn btn-card" href={waLink(contact.whatsapp, orderText(p))} target="_blank" rel="noopener noreferrer">{shop.productEnquiryCta}</a>
+                </div>
                 <button
                   type="button"
                   onClick={() => toggle(p.id)}
                   aria-pressed={cmp.includes(p.id)}
-                  className="min-h-[44px] rounded-2xl text-sm font-semibold"
+                  className="compare-toggle min-h-[44px] rounded-2xl text-sm font-semibold mt-auto"
                   style={{
                     border: `1px solid ${cmp.includes(p.id) ? "var(--accent)" : "rgba(255,255,255,.25)"}`,
                     background: cmp.includes(p.id) ? "rgba(255,138,0,.18)" : "rgba(255,255,255,.05)",
@@ -114,7 +125,7 @@ export default function App() {
                 >
                   {cmp.includes(p.id) ? shop.addedCompare : shop.addCompare}
                 </button>
-              </Reveal>
+              </article>
             ))}
           </div>
           {list.length === 0 ? <div className="glass rounded-3xl p-10 text-center" style={{ color: "#B8C8D7" }}>{shop.empty}</div> : null}
@@ -129,14 +140,46 @@ export default function App() {
           ))}
         </Reveal>
 
-        <Reveal as="section" id="visit" className="glass mb-6 flex flex-wrap gap-7 rounded-[36px] px-7 py-11">
-          <div className="min-w-0 flex-1 basis-72">
-            <h2 className="mb-2.5 text-3xl font-extrabold">{visit.heading}</h2>
-            <p className="leading-relaxed" style={{ color: "#B8C8D7" }}>{contact.address}</p>
+        <Reveal as="section" id="visit" className="visit-section glass mb-6 rounded-[36px] p-5 md:p-7">
+          <div className="mb-5">
+            <h2 className="mb-2 text-3xl font-extrabold">{visit.heading}</h2>
+            <p className="leading-relaxed text-muted">{visit.intro}</p>
           </div>
-          <div className="grid min-w-0 flex-1 basis-72 grid-cols-2 gap-4 text-[15px]">
-            <div><div className="mono mb-1.5 text-muted">{visit.hoursLabel}</div>{contact.hours}</div>
-            <div><div className="mono mb-1.5 text-muted">{visit.whatsappLabel}</div>{contact.displayNumber}</div>
+          <div className="visit-grid">
+            <div className="visit-gallery">
+              <figure className="visit-photo-card">
+                <img src={`/${visit.photos.exterior.replace(/^\//, "")}`} alt={`${business.name} shop exterior`} loading="lazy" decoding="async" width="780" height="1048" />
+                <figcaption>{visit.exteriorLabel}</figcaption>
+              </figure>
+              <figure className="visit-photo-card">
+                <img src={`/${visit.photos.interior.replace(/^\//, "")}`} alt={`${business.name} interior`} loading="lazy" decoding="async" width="780" height="1048" />
+                <figcaption>{visit.interiorLabel}</figcaption>
+              </figure>
+            </div>
+            <div className="visit-side">
+              <div className="visit-details glass-dark rounded-2xl p-4">
+                <div className="visit-detail-row">
+                  <span className="visit-icon" aria-hidden="true">⌖</span>
+                  <div><div className="mono mb-1.5 text-muted">Address</div><p>{contact.address}</p></div>
+                </div>
+                <div className="visit-detail-row">
+                  <span className="visit-icon" aria-hidden="true">◷</span>
+                  <div><div className="mono mb-1.5 text-muted">{visit.hoursLabel}</div><p>{contact.hours}</p></div>
+                </div>
+                <div className="visit-detail-row">
+                  <span className="visit-icon" aria-hidden="true">☏</span>
+                  <div><div className="mono mb-1.5 text-muted">{visit.whatsappLabel}</div><p>{contact.displayNumber}</p></div>
+                </div>
+                <div className="visit-actions">
+                  <a className="btn visit-action-btn" href={directionsUrl} target="_blank" rel="noopener noreferrer">{visit.directionsCta}</a>
+                  <a className="btn btn-ghost visit-action-btn" href={waLink(contact.whatsapp, visitMessage)} target="_blank" rel="noopener noreferrer">{visit.contactCta}</a>
+                </div>
+              </div>
+              <div className="visit-map-card">
+                <div className="map-card-heading"><span className="mono text-muted">{visit.mapLabel}</span><a href={directionsUrl} target="_blank" rel="noopener noreferrer">Open map ↗</a></div>
+                <iframe title={`${business.name} location map`} src={mapEmbedUrl} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+              </div>
+            </div>
           </div>
         </Reveal>
       </main>
@@ -192,6 +235,7 @@ export default function App() {
             </tbody>
           </table>
         </div>
+        <a className="btn compare-enquiry-cta" href={waLink(contact.whatsapp, compareOrderText)} target="_blank" rel="noopener noreferrer">{shop.compareOrderCta}</a>
       </Modal>
 
       <Modal open={!!cur} onClose={closeModal} label={cur ? cur.name : "Product details"}>

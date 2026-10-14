@@ -12,7 +12,8 @@
     "whatsapp": "263770000000",
     "displayNumber": "[CLIENT NUMBER]",
     "address": "[SHOP NAME], [MALL OR STREET ADDRESS], Harare",
-    "hours": "[OPEN] to [CLOSE]"
+    "hours": "[OPEN] to [CLOSE]",
+    "mapDestination": "Harare, Zimbabwe"
   },
   "brand": {
     "accent": "#FF8A00",
@@ -34,9 +35,18 @@
   },
   "nav": {
     "links": [
-      { "label": "Shop", "href": "#shop" },
-      { "label": "Warranty", "href": "#why" },
-      { "label": "Find us", "href": "#visit" }
+      {
+        "label": "Shop",
+        "href": "#shop"
+      },
+      {
+        "label": "Warranty",
+        "href": "#why"
+      },
+      {
+        "label": "Find us",
+        "href": "#visit"
+      }
     ],
     "cta": "Ask on WhatsApp",
     "message": "Hi Sample Tech Hub, I saw your website and have a question."
@@ -46,7 +56,13 @@
     "searchLabel": "Search products",
     "searchPlaceholder": "Search phone, laptop, charger, model number",
     "brandLabel": "Brand",
-    "categories": ["Phones", "Laptops", "Accessories", "Audio", "TVs"],
+    "categories": [
+      "Phones",
+      "Laptops",
+      "Accessories",
+      "Audio",
+      "TVs"
+    ],
     "allLabel": "All",
     "countOne": "product",
     "countMany": "products",
@@ -60,11 +76,15 @@
     "compareTitle": "Compare",
     "specWarranty": "Warranty",
     "specAvailability": "Availability",
-    "orderCta": "Check availability on WhatsApp",
+    "orderCta": "Buy / enquire on WhatsApp",
     "relatedLabel": "Goes well with",
     "orderMessage": "Hi {shop}, is the {name} ({model}) available? Listed at {price}.",
     "priceSuffix": " (sample)",
-    "noPrice": "Ask for price"
+    "noPrice": "Ask for price",
+    "viewDetails": "View details",
+    "productEnquiryCta": "Buy / enquire on WhatsApp",
+    "compareOrderCta": "Enquire about these products on WhatsApp",
+    "compareOrderMessage": "Hi {shop}, I would like to ask about these products:\n{items}\nPlease confirm current availability and final prices. Thank you."
   },
   "availability": {
     "in": "In stock",
@@ -73,14 +93,38 @@
     "enq": "Ask availability"
   },
   "highlights": [
-    { "title": "Warranty on every item", "text": "[WARRANTY TERMS, for example 12 months on phones, 6 months on accessories]" },
-    { "title": "Check before you come", "text": "Stock labels show what is on the shelf. Message us to hold an item for collection." },
-    { "title": "After-sales help", "text": "[REPAIRS, SCREEN REPLACEMENT AND SETUP SERVICES OFFERED]" }
+    {
+      "title": "Warranty on every item",
+      "text": "[WARRANTY TERMS, for example 12 months on phones, 6 months on accessories]"
+    },
+    {
+      "title": "Check before you come",
+      "text": "Stock labels show what is on the shelf. Message us to hold an item for collection."
+    },
+    {
+      "title": "After-sales help",
+      "text": "[REPAIRS, SCREEN REPLACEMENT AND SETUP SERVICES OFFERED]"
+    },
+    {
+      "title": "Delivery & collection",
+      "text": "Ask us about delivery areas, fees and collection arrangements before visiting."
+    }
   ],
   "visit": {
     "heading": "Find the shop",
     "hoursLabel": "Hours",
-    "whatsappLabel": "WhatsApp"
+    "whatsappLabel": "WhatsApp",
+    "intro": "See the store, check the location and plan your visit.",
+    "exteriorLabel": "Shop exterior",
+    "interiorLabel": "Inside the shop",
+    "mapLabel": "Shop location map",
+    "directionsCta": "Get Directions on Google Maps",
+    "contactCta": "Ask the shop on WhatsApp",
+    "contactMessage": "Hi {shop}, I have a question about visiting the shop.",
+    "photos": {
+      "exterior": "images/shop/shop-exterior.webp",
+      "interior": "images/shop/shop-interior.webp"
+    }
   },
   "footer": {
     "credit": "Built by WeVibed"
