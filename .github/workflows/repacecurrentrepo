@@ -1,0 +1,127 @@
+name: Replace repository from fixed ZIP
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_replace:
+        description: "This replaces tracked repository files with Electronics-WeVibed-fixed-repo.zip. Select REPLACE to continue."
+        required: true
+        type: choice
+        default: CANCEL
+        options:
+          - CANCEL
+          - REPLACE
+
+permissions:
+  contents: write
+
+concurrency:
+  group: replace-repository-from-fixed-zip
+  cancel-in-progress: false
+
+jobs:
+  replace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Confirm replacement and extract ZIP
+        shell: bash
+        env:
+          CONFIRM_REPLACE: ${{ inputs.confirm_replace }}
+          ZIP_PATH: Electronics-WeVibed-fixed-repo.zip
+        run: |
+          set -euo pipefail
+
+          if [[ "$CONFIRM_REPLACE" != "REPLACE" ]]; then
+            echo "Cancelled. Select REPLACE in the workflow input to continue."
+            exit 1
+          fi
+
+          if [[ ! -f "$ZIP_PATH" ]]; then
+            echo "ERROR: $ZIP_PATH was not found in the repository root."
+            echo "Upload the ZIP to the repository root, commit it, and run this workflow again."
+            exit 1
+          fi
+
+          # Reject unsafe archive paths before extracting.
+          if unzip -Z1 "$ZIP_PATH" | grep -Eq '(^/|(^|/)\.\.(/|$))'; then
+            echo "ERROR: ZIP contains an unsafe absolute or parent-traversal path."
+            exit 1
+          fi
+
+          EXTRACT_DIR="$RUNNER_TEMP/fixed-repo-extract"
+          mkdir -p "$EXTRACT_DIR"
+          unzip -q "$ZIP_PATH" -d "$EXTRACT_DIR"
+
+          SOURCE_DIR="$EXTRACT_DIR"
+          mapfile -t TOP_ITEMS < <(find "$EXTRACT_DIR" -mindepth 1 -maxdepth 1 -print)
+          if [[ "${#TOP_ITEMS[@]}" -eq 1 && -d "${TOP_ITEMS[0]}" && -f "${TOP_ITEMS[0]}/package.json" ]]; then
+            SOURCE_DIR="${TOP_ITEMS[0]}"
+          fi
+
+          # Validate that the archive contains the expected web application.
+          for required_file in package.json index.html src/App.jsx src/data/products.json scripts/check.mjs; do
+            if [[ ! -f "$SOURCE_DIR/$required_file" ]]; then
+              echo "ERROR: Expected file missing from ZIP: $required_file"
+              exit 1
+            fi
+          done
+
+          echo "$SOURCE_DIR" > "$RUNNER_TEMP/fixed-repo-source-dir"
+          echo "Validated website files in: $SOURCE_DIR"
+
+      - name: Replace repository contents
+        shell: bash
+        env:
+          ZIP_PATH: Electronics-WeVibed-fixed-repo.zip
+        run: |
+          set -euo pipefail
+          SOURCE_DIR="$(cat "$RUNNER_TEMP/fixed-repo-source-dir")"
+
+          # Delete files not present in the ZIP while preserving .git and this
+          # workflow so the replacement workflow remains available for reuse.
+          rsync -a --delete \
+            --exclude='/.git/' \
+            --filter='P /.github/workflows/replace-repo-from-fixed-zip.yml' \
+            "$SOURCE_DIR/" "$GITHUB_WORKSPACE/"
+
+          # Remove the uploaded one-time ZIP and the older wildcard extractor.
+          # The older workflow could otherwise select the wrong ZIP and overwrite
+          # the fixed source files on a later push.
+          rm -f "$ZIP_PATH"
+          rm -f .github/workflows/extract-zip.yml
+          rm -f wevibed-electronics.zip
+
+          # Confirm key files are now at repository root.
+          test -f package.json
+          test -f index.html
+          test -f src/App.jsx
+          test -d public/images/products
+          test -f public/images/shop/shop-exterior.webp
+          test -f public/images/shop/shop-interior.webp
+
+      - name: Run site-data checks
+        run: node scripts/check.mjs
+
+      - name: Commit and push replacement
+        shell: bash
+        env:
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Repository already matches the fixed ZIP; no commit needed."
+            exit 0
+          fi
+
+          git commit -m "Replace repository with fixed electronics website"
+          git push origin "HEAD:${TARGET_BRANCH}"
