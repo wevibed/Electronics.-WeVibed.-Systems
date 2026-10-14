@@ -13,7 +13,7 @@ on:
           - REPLACE
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: replace-repository-from-fixed-zip
@@ -23,17 +23,21 @@ jobs:
   replace:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the default branch
+      - name: Check out the default branch with replacement token
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
+          # Create a repository-scoped fine-grained PAT with Contents: Read and write
+          # and Workflows: Read and write, then save it as REPO_REPLACEMENT_TOKEN.
+          token: ${{ secrets.REPO_REPLACEMENT_TOKEN }}
 
       - name: Confirm replacement and extract ZIP
         shell: bash
         env:
           CONFIRM_REPLACE: ${{ inputs.confirm_replace }}
           ZIP_PATH: Electronics-WeVibed-fixed-repo.zip
+          REPLACEMENT_TOKEN: ${{ secrets.REPO_REPLACEMENT_TOKEN }}
         run: |
           set -euo pipefail
 
@@ -42,13 +46,16 @@ jobs:
             exit 1
           fi
 
-          if [[ ! -f "$ZIP_PATH" ]]; then
-            echo "ERROR: $ZIP_PATH was not found in the repository root."
-            echo "Upload the ZIP to the repository root, commit it, and run this workflow again."
+          if [[ -z "${REPLACEMENT_TOKEN:-}" ]]; then
+            echo "ERROR: Add a repository secret named REPO_REPLACEMENT_TOKEN before running this workflow."
             exit 1
           fi
 
-          # Reject unsafe archive paths before extracting.
+          if [[ ! -f "$ZIP_PATH" ]]; then
+            echo "ERROR: $ZIP_PATH was not found in the repository root."
+            exit 1
+          fi
+
           if unzip -Z1 "$ZIP_PATH" | grep -Eq '(^/|(^|/)\.\.(/|$))'; then
             echo "ERROR: ZIP contains an unsafe absolute or parent-traversal path."
             exit 1
@@ -64,7 +71,6 @@ jobs:
             SOURCE_DIR="${TOP_ITEMS[0]}"
           fi
 
-          # Validate that the archive contains the expected web application.
           for required_file in package.json index.html src/App.jsx src/data/products.json scripts/check.mjs; do
             if [[ ! -f "$SOURCE_DIR/$required_file" ]]; then
               echo "ERROR: Expected file missing from ZIP: $required_file"
@@ -83,45 +89,8 @@ jobs:
           set -euo pipefail
           SOURCE_DIR="$(cat "$RUNNER_TEMP/fixed-repo-source-dir")"
 
-          # Delete files not present in the ZIP while preserving .git and this
-          # workflow so the replacement workflow remains available for reuse.
-          rsync -a --delete \
-            --exclude='/.git/' \
-            --filter='P /.github/workflows/replace-repo-from-fixed-zip.yml' \
-            "$SOURCE_DIR/" "$GITHUB_WORKSPACE/"
-
-          # Remove the uploaded one-time ZIP and the older wildcard extractor.
-          # The older workflow could otherwise select the wrong ZIP and overwrite
-          # the fixed source files on a later push.
-          rm -f "$ZIP_PATH"
-          rm -f .github/workflows/extract-zip.yml
-          rm -f wevibed-electronics.zip
-
-          # Confirm key files are now at repository root.
-          test -f package.json
-          test -f index.html
-          test -f src/App.jsx
-          test -d public/images/products
-          test -f public/images/shop/shop-exterior.webp
-          test -f public/images/shop/shop-interior.webp
-
-      - name: Run site-data checks
-        run: node scripts/check.mjs
-
-      - name: Commit and push replacement
-        shell: bash
-        env:
-          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A
-          if git diff --cached --quiet; then
-            echo "Repository already matches the fixed ZIP; no commit needed."
-            exit 0
-          fi
-
-          git commit -m "Replace repository with fixed electronics website"
-          git push origin "HEAD:${TARGET_BRANCH}"
+          # Preserve the workflow currently executing, even if its filename differs.
+          WORKFLOW_REF="${GITHUB_WORKFLOW_REF#*/.github/workflows/}"
+          WORKFLOW_FILE="${WORKFLOW_REF%@*}"
+          if [[ -f ".github/workflows/$WORKFLOW_FILE" ]]; then
+            mkdir -p "$RUNNER_TEMP/keep-workflow"
