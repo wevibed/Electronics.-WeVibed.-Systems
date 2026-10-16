@@ -30,7 +30,7 @@ export default function App() {
   const avClass = (p) => `pill-av av-${availability[p.availability] ? p.availability : "enq"}`;
 
   const base = useMemo(() => products.filter((p) => cat === shop.allLabel || p.category === cat), [cat, shop.allLabel]);
-  const brands = useMemo(() => [shop.allLabel, ...Array.from(new Set(base.map((p) => p.brand)))], [base, shop.allLabel]);
+  const brands = useMemo(() => [shop.allLabel, ...Array.from(new Set(base.map((p) => p.brand).filter(Boolean)))], [base, shop.allLabel]);
   const list = useMemo(() => {
     const term = q.trim().toLowerCase();
     return base.filter(
@@ -101,7 +101,7 @@ export default function App() {
                 <button type="button" onClick={() => setSel(p.id)} aria-label={`${p.name}, ${price(p)}`} className="block overflow-hidden rounded-2xl p-0 border-0 bg-transparent text-inherit text-left">
                   <ProductPhoto product={p} />
                 </button>
-                <div className="mono px-1 text-muted normal-case">{p.brand} / {p.model}</div>
+                {(p.brand || p.model) ? <div className="mono px-1 text-muted normal-case">{[p.brand, p.model].filter(Boolean).join(" / ")}</div> : null}
                 <button type="button" onClick={() => setSel(p.id)} className="px-1 text-left font-display text-base font-bold leading-snug bg-transparent border-0 text-inherit p-0">{p.name}</button>
                 <div className="px-1 text-[13px] leading-normal" style={{ color: "#B8C8D7" }}>{p.specs.slice(0, 3).map((s) => s.value).join(" / ")}</div>
                 <div className="flex flex-wrap items-center justify-between gap-2 px-1">
@@ -245,7 +245,7 @@ export default function App() {
               <ProductPhoto product={cur} className="rounded-2xl" />
             </div>
             <div className="flex min-w-0 flex-1 basis-80 flex-col gap-3.5">
-              <span className="mono text-muted normal-case">{cur.brand} / {cur.model}</span>
+              {(cur.brand || cur.model) ? <span className="mono text-muted normal-case">{[cur.brand, cur.model].filter(Boolean).join(" / ")}</span> : null}
               <h3 className="text-[28px] font-extrabold leading-tight tracking-tight">{cur.name}</h3>
               <div className="flex flex-wrap items-center gap-3">
                 <span className="font-display text-2xl font-bold">{price(cur)}</span>

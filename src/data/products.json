@@ -1,331 +1,1306 @@
 {
   "items": [
     {
-      "id": "nova-x5",
-      "name": "Nova X5 Smartphone",
-      "brand": "Nova",
-      "model": "X5-128",
+      "id": "bg-001-galaxy-m15",
+      "name": "Galaxy M15",
+      "brand": "",
+      "model": "",
       "category": "Phones",
-      "price": 219,
-      "availability": "in",
-      "tint": 0,
-      "image": "images/products/nova-x5.webp",
-      "specs": [
-        {
-          "label": "Screen",
-          "value": "6.5 in AMOLED"
-        },
-        {
-          "label": "Memory",
-          "value": "6 GB RAM"
-        },
-        {
-          "label": "Storage",
-          "value": "128 GB"
-        },
-        {
-          "label": "Battery",
-          "value": "5000 mAh"
-        },
-        {
-          "label": "Camera",
-          "value": "50 MP main"
-        }
-      ],
-      "warranty": "12 months",
-      "related": [
-        "nova-case",
-        "volt-charger"
-      ]
-    },
-    {
-      "id": "pixio-a2",
-      "name": "Pixio A2 Smartphone",
-      "brand": "Pixio",
-      "model": "A2-64",
-      "category": "Phones",
-      "price": 129,
-      "availability": "low",
+      "price": 160,
+      "availability": "enq",
       "tint": 1,
-      "image": "images/products/pixio-a2.webp",
-      "specs": [
-        {
-          "label": "Screen",
-          "value": "6.1 in LCD"
-        },
-        {
-          "label": "Memory",
-          "value": "4 GB RAM"
-        },
-        {
-          "label": "Storage",
-          "value": "64 GB"
-        },
-        {
-          "label": "Battery",
-          "value": "4500 mAh"
-        },
-        {
-          "label": "Camera",
-          "value": "13 MP main"
-        }
-      ],
-      "warranty": "12 months",
-      "related": [
-        "nova-case",
-        "volt-charger"
-      ]
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
     },
     {
-      "id": "kora-book14",
-      "name": "Kora Book 14 Laptop",
-      "brand": "Kora",
-      "model": "KB14-i5",
-      "category": "Laptops",
-      "price": 549,
-      "availability": "in",
-      "tint": 2,
-      "image": "images/products/kora-book14.webp",
-      "specs": [
-        {
-          "label": "Screen",
-          "value": "14 in FHD"
-        },
-        {
-          "label": "Processor",
-          "value": "Quad-core i5 class"
-        },
-        {
-          "label": "Memory",
-          "value": "8 GB RAM"
-        },
-        {
-          "label": "Storage",
-          "value": "512 GB SSD"
-        },
-        {
-          "label": "Battery",
-          "value": "Up to 9 hours"
-        }
-      ],
-      "warranty": "12 months",
-      "related": [
-        "kora-bag",
-        "volt-charger"
-      ]
-    },
-    {
-      "id": "kora-book15",
-      "name": "Kora Book 15 Laptop",
-      "brand": "Kora",
-      "model": "KB15-i3",
-      "category": "Laptops",
-      "price": 399,
+      "id": "bg-002-galaxy-a05",
+      "name": "Galaxy A05",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 95,
       "availability": "enq",
       "tint": 2,
-      "image": "images/products/kora-book15.webp",
-      "specs": [
-        {
-          "label": "Screen",
-          "value": "15.6 in HD"
-        },
-        {
-          "label": "Processor",
-          "value": "Dual-core i3 class"
-        },
-        {
-          "label": "Memory",
-          "value": "8 GB RAM"
-        },
-        {
-          "label": "Storage",
-          "value": "256 GB SSD"
-        },
-        {
-          "label": "Battery",
-          "value": "Up to 7 hours"
-        }
-      ],
-      "warranty": "12 months",
-      "related": [
-        "kora-bag"
-      ]
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
     },
     {
-      "id": "volt-charger",
-      "name": "Volt 33W Fast Charger",
-      "brand": "Volt",
-      "model": "VC-33",
-      "category": "Accessories",
-      "price": 15,
-      "availability": "in",
-      "tint": 1,
-      "image": "images/products/volt-charger.webp",
-      "specs": [
-        {
-          "label": "Output",
-          "value": "33 W"
-        },
-        {
-          "label": "Ports",
-          "value": "USB-C"
-        },
-        {
-          "label": "Cable",
-          "value": "1 m included"
-        }
-      ],
-      "warranty": "6 months",
-      "related": [
-        "nova-case"
-      ]
-    },
-    {
-      "id": "nova-case",
-      "name": "Nova X5 Protective Case",
-      "brand": "Nova",
-      "model": "NC-X5",
-      "category": "Accessories",
-      "price": 8,
-      "availability": "in",
-      "tint": 0,
-      "image": "images/products/nova-case.webp",
-      "specs": [
-        {
-          "label": "Fits",
-          "value": "Nova X5"
-        },
-        {
-          "label": "Material",
-          "value": "TPU"
-        },
-        {
-          "label": "Finish",
-          "value": "Clear"
-        }
-      ],
-      "warranty": "None",
-      "related": [
-        "volt-charger"
-      ]
-    },
-    {
-      "id": "kora-bag",
-      "name": "Kora Laptop Backpack",
-      "brand": "Kora",
-      "model": "KBP-15",
-      "category": "Accessories",
-      "price": 22,
-      "availability": "low",
-      "tint": 2,
-      "image": "images/products/kora-bag.webp",
-      "specs": [
-        {
-          "label": "Fits",
-          "value": "Up to 15.6 in"
-        },
-        {
-          "label": "Material",
-          "value": "Water-resistant nylon"
-        },
-        {
-          "label": "Pockets",
-          "value": "3"
-        }
-      ],
-      "warranty": "3 months",
-      "related": [
-        "kora-book14",
-        "kora-book15"
-      ]
-    },
-    {
-      "id": "veltra-buds",
-      "name": "Veltra Wireless Earbuds",
-      "brand": "Veltra",
-      "model": "VB-200",
-      "category": "Audio",
-      "price": 29,
-      "availability": "in",
+      "id": "bg-003-galaxy-a13",
+      "name": "Galaxy A13",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 145,
+      "availability": "enq",
       "tint": 3,
-      "image": "images/products/veltra-buds.webp",
-      "specs": [
-        {
-          "label": "Battery",
-          "value": "24 h with case"
-        },
-        {
-          "label": "Connection",
-          "value": "Bluetooth 5.3"
-        },
-        {
-          "label": "Water rating",
-          "value": "IPX4"
-        }
-      ],
-      "warranty": "6 months",
-      "related": [
-        "veltra-speaker",
-        "volt-charger"
-      ]
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
     },
     {
-      "id": "veltra-speaker",
-      "name": "Veltra Portable Speaker",
-      "brand": "Veltra",
-      "model": "VS-10",
-      "category": "Audio",
-      "price": 35,
-      "availability": "out",
+      "id": "bg-004-45w-charger",
+      "name": "45W Charger",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 10,
+      "availability": "enq",
       "tint": 4,
-      "image": "images/products/veltra-speaker.webp",
-      "specs": [
-        {
-          "label": "Battery",
-          "value": "12 h"
-        },
-        {
-          "label": "Connection",
-          "value": "Bluetooth 5.0"
-        },
-        {
-          "label": "Water rating",
-          "value": "IPX5"
-        }
-      ],
-      "warranty": "6 months",
-      "related": [
-        "veltra-buds"
-      ]
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
     },
     {
-      "id": "pixio-tv43",
-      "name": "Pixio 43 in Smart TV",
-      "brand": "Pixio",
-      "model": "PT43-S",
-      "category": "TVs",
-      "price": 289,
+      "id": "bg-005-metal-cases",
+      "name": "Metal Cases",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 25,
       "availability": "enq",
       "tint": 5,
-      "image": "images/products/pixio-tv43.webp",
-      "specs": [
-        {
-          "label": "Screen",
-          "value": "43 in 4K"
-        },
-        {
-          "label": "Smart apps",
-          "value": "Streaming apps built in"
-        },
-        {
-          "label": "Ports",
-          "value": "3 HDMI, 2 USB"
-        }
-      ],
-      "warranty": "12 months",
-      "related": [
-        "veltra-speaker"
-      ]
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-006-powerbank-fast-charging",
+      "name": "Powerbank — Fast Charging",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 45,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-007-powerbank-all-in-one",
+      "name": "Powerbank — All-in-One",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 45,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-008-powerbank-high-capacity",
+      "name": "Powerbank — High Capacity",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 80,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-009-powerbank-big-mac",
+      "name": "Powerbank — Big Mac",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 80,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-010-powerbank-4-in-1",
+      "name": "Powerbank — 4-in-1",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 30,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-011-magsafe-powerbank",
+      "name": "MagSafe Powerbank",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 50,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-012-powerbank-aspor-10-000mah",
+      "name": "Powerbank — Aspor 10,000mAh",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 15,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-013-powerbank-3-in-1-wireless",
+      "name": "Powerbank — 3-in-1 Wireless",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 35,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-014-aux-cable",
+      "name": "AUX Cable",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 5,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-015-amour-pouch",
+      "name": "Amour Pouch",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 20,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-016-usb-data-cable",
+      "name": "USB Data Cable",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 5,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-017-charger-type-c-original-15w",
+      "name": "Charger Type C — Original 15W",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 10,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-018-shutter-glass",
+      "name": "Shutter Glass",
+      "brand": "",
+      "model": "",
+      "category": "Screen Protectors",
+      "price": 5,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-019-car-mp3-wireless-charger",
+      "name": "Car MP3 Wireless Charger",
+      "brand": "",
+      "model": "",
+      "category": "Car Accessories",
+      "price": 10,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-020-anti-static-shutter-glass",
+      "name": "Anti-Static Shutter Glass",
+      "brand": "",
+      "model": "",
+      "category": "Screen Protectors",
+      "price": 5,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-021-privacy-shutter-glass",
+      "name": "Privacy Shutter Glass",
+      "brand": "",
+      "model": "",
+      "category": "Screen Protectors",
+      "price": 8,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-022-nokia-105",
+      "name": "Nokia 105",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 25,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-023-galaxy-tab-a7-lite",
+      "name": "Galaxy Tab A7 Lite",
+      "brand": "",
+      "model": "",
+      "category": "Tablets",
+      "price": 160,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-024-powerbank",
+      "name": "Powerbank",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 50,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-025-powerbank-pzx",
+      "name": "Powerbank PZX",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 20,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-026-brick-powerbank",
+      "name": "Brick Powerbank",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 80,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-027-powerbank-pzx-30-000mah",
+      "name": "Powerbank PZX — 30,000mAh",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 40,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-028-pzx-powerbank-20-000mah",
+      "name": "PZX Powerbank — 20,000mAh",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 35,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-029-powerbank-v71-10-000mah",
+      "name": "Powerbank V71 — 10,000mAh",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 30,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-030-galaxy-tab-a8",
+      "name": "Galaxy Tab A8",
+      "brand": "",
+      "model": "",
+      "category": "Tablets",
+      "price": 250,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-031-iphone-connector",
+      "name": "iPhone Connector",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 5,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-032-selfie-ringlight",
+      "name": "Selfie Ringlight",
+      "brand": "",
+      "model": "",
+      "category": "Photo & Video",
+      "price": 5,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-033-magsafe-pouches",
+      "name": "MagSafe Pouches",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 10,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-034-tablet-pouches",
+      "name": "Tablet Pouches",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 15,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-035-lavalier-microphone",
+      "name": "Lavalier Microphone",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 8,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-036-lightning-earphones-for-iphone",
+      "name": "Lightning Earphones for iPhone",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 10,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-037-pzx-type-c-earphones",
+      "name": "PZX Type-C Earphones",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 10,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-038-power-adapter-65w",
+      "name": "Power Adapter 65W",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 30,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-039-iphone-14-pro-max",
+      "name": "iPhone 14 Pro Max",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 1450,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-040-samsung-m33",
+      "name": "Samsung M33",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 250,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-041-samsung-a14",
+      "name": "Samsung A14",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 190,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-042-samsung-a04s",
+      "name": "Samsung A04S",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 130,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-043-quick-car-charger",
+      "name": "Quick Car Charger",
+      "brand": "",
+      "model": "",
+      "category": "Car Accessories",
+      "price": 5,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-044-wireless-mouse",
+      "name": "Wireless Mouse",
+      "brand": "",
+      "model": "",
+      "category": "Computer Accessories",
+      "price": 10,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-045-energy-cube-power-bank",
+      "name": "Energy Cube Power Bank",
+      "brand": "",
+      "model": "",
+      "category": "Power Banks",
+      "price": 80,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-046-iphone-xr",
+      "name": "iPhone XR",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 280,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-047-a33",
+      "name": "A33",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 300,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-048-s22-ultra",
+      "name": "S22 Ultra",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 950,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-049-z-flip-pouch",
+      "name": "Z Flip Pouch",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 30,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-050-iphone-charger",
+      "name": "iPhone Charger",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 20,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-051-amour-pouches",
+      "name": "Amour Pouches",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 20,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-052-samsung-charger-25w",
+      "name": "Samsung Charger — 25W",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 10,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-053-lightning-to-aux",
+      "name": "Lightning to AUX",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 10,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-054-silicone-pouches",
+      "name": "Silicone Pouches",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 5,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-055-magnetic-charger-for-iphone",
+      "name": "Magnetic Charger for iPhone",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 20,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-056-s23-ultra",
+      "name": "S23 Ultra",
+      "brand": "",
+      "model": "",
+      "category": "Phones",
+      "price": 1150,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-057-smart-watch",
+      "name": "Smart Watch",
+      "brand": "",
+      "model": "",
+      "category": "Wearables",
+      "price": 40,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-058-smart-power-inverter",
+      "name": "Smart Power Inverter",
+      "brand": "",
+      "model": "",
+      "category": "Power & Inverters",
+      "price": 60,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-059-airpods-pro",
+      "name": "AirPods Pro",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 280,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-060-type-c-connector",
+      "name": "Type-C Connector",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 5,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-061-original-car-charger",
+      "name": "Original Car Charger",
+      "brand": "",
+      "model": "",
+      "category": "Car Accessories",
+      "price": 8,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-062-original-type-c-cable",
+      "name": "Original Type-C Cable",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 5,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-063-selfie-stick",
+      "name": "Selfie Stick",
+      "brand": "",
+      "model": "",
+      "category": "Photo & Video",
+      "price": 5,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-064-tempered-glass",
+      "name": "Tempered Glass",
+      "brand": "",
+      "model": "",
+      "category": "Screen Protectors",
+      "price": 5,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-065-usb-iphone-cable",
+      "name": "USB iPhone Cable",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 10,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-066-airpods-max-headphones",
+      "name": "AirPods Max Headphones",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 60,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-067-camera-film-protector",
+      "name": "Camera Film Protector",
+      "brand": "",
+      "model": "",
+      "category": "Screen Protectors",
+      "price": 5,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-068-c-type-to-c-type-cable",
+      "name": "C-Type to C-Type Cable",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 10,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-069-magsafe-frost-pouch",
+      "name": "MagSafe Frost Pouch",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 10,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-070-car-charger-fast-charging",
+      "name": "Car Charger — Fast Charging",
+      "brand": "",
+      "model": "",
+      "category": "Car Accessories",
+      "price": 15,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-071-magnetic-sport-headset",
+      "name": "Magnetic Sport Headset",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 30,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-072-hard-clear-pouch",
+      "name": "Hard Clear Pouch",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 15,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-073-iwatch-belts-and-samsung-watch-belts",
+      "name": "iWatch Belts and Samsung Watch Belts",
+      "brand": "",
+      "model": "",
+      "category": "Wearables",
+      "price": 15,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-074-wireless-microphone",
+      "name": "Wireless Microphone",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 20,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-075-original-iphone-cables",
+      "name": "Original iPhone Cables",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 10,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-076-original-iphone-12-charger-head",
+      "name": "Original iPhone 12 Charger Head",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 20,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-077-original-iphone-head-charger",
+      "name": "Original iPhone Head Charger",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 15,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-078-original-iphone-head-charger-second-listing",
+      "name": "Original iPhone Head Charger (second listing)",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 15,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-079-s21-s21-plus-s21-ultra-25w-adapter",
+      "name": "S21 / S21 Plus / S21 Ultra 25W Adapter",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 20,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-080-pouches-different-colours",
+      "name": "Pouches — Different Colours",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 8,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-081-iphone-shutter-glass",
+      "name": "iPhone Shutter Glass",
+      "brand": "",
+      "model": "",
+      "category": "Screen Protectors",
+      "price": 5,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-082-iphone-head-charger",
+      "name": "iPhone Head Charger",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 10,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-083-any-pouches-available",
+      "name": "Any Pouches Available",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 5,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-084-earphones-connector",
+      "name": "Earphones Connector",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 10,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-085-all-shutter-glass",
+      "name": "All Shutter Glass",
+      "brand": "",
+      "model": "",
+      "category": "Screen Protectors",
+      "price": 5,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-086-s10-travel-charger",
+      "name": "S10 Travel Charger",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 15,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-087-classic-cable",
+      "name": "Classic Cable",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 5,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-088-complete-set-charger",
+      "name": "Complete Set Charger",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 15,
+      "availability": "enq",
+      "tint": 4,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-089-akg-original-earphones",
+      "name": "AKG Original Earphones",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 15,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-090-samsung-earphones",
+      "name": "Samsung Earphones",
+      "brand": "",
+      "model": "",
+      "category": "Audio",
+      "price": 5,
+      "availability": "enq",
+      "tint": 0,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-091-3-pin-fast-charger",
+      "name": "3-Pin Fast Charger",
+      "brand": "",
+      "model": "",
+      "category": "Chargers & Cables",
+      "price": 8,
+      "availability": "enq",
+      "tint": 1,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-092-mate-pouches-for-all-models",
+      "name": "Mate Pouches for All Models",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 5,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
+    },
+    {
+      "id": "bg-093-pouches-all-models",
+      "name": "Pouches — All Models",
+      "brand": "",
+      "model": "",
+      "category": "Cases & Pouches",
+      "price": 8,
+      "availability": "enq",
+      "tint": 3,
+      "image": "",
+      "specs": [],
+      "warranty": "Confirm with shop",
+      "related": []
     }
   ]
 }
