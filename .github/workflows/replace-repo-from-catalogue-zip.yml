@@ -1,0 +1,79 @@
+name: Replace Repository From Catalogue ZIP
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  replace-repository:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Verify catalogue ZIP
+        run: |
+          test -f "BG-Mobiles-Catalogue-Updated.zip"
+          unzip -t "BG-Mobiles-Catalogue-Updated.zip"
+
+      - name: Extract and replace application files
+        run: |
+          set -euo pipefail
+
+          mkdir -p /tmp/catalogue-replacement
+          unzip -q "BG-Mobiles-Catalogue-Updated.zip" \
+            -d /tmp/catalogue-replacement
+
+          # Find the extracted application root.
+          ROOT="/tmp/catalogue-replacement"
+
+          if [ ! -f "$ROOT/package.json" ]; then
+            FOUND="$(find "$ROOT" -mindepth 2 -maxdepth 3 \
+              -name package.json -print -quit)"
+            if [ -z "$FOUND" ]; then
+              echo "No package.json found in the ZIP."
+              exit 1
+            fi
+            ROOT="$(dirname "$FOUND")"
+          fi
+
+          test -f "$ROOT/package.json"
+          test -f "$ROOT/index.html"
+
+          # Preserve repository automation and Git metadata.
+          find . -mindepth 1 -maxdepth 1 \
+            ! -name '.git' \
+            ! -name '.github' \
+            -exec rm -rf {} +
+
+          # Copy the replacement website into the repository root.
+          cp -a "$ROOT"/. .
+
+          # Do not retain the uploaded replacement archive.
+          rm -f "BG-Mobiles-Catalogue-Updated.zip"
+
+      - name: Install dependencies and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Commit and push replacement
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Replace storefront with B&G Mobiles catalogue"
+          git push origin main
