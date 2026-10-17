@@ -1,0 +1,1 @@
+Catalogue screenshot crops. Each JPG is a thumbnail crop from the supplied WhatsApp catalogue screenshots. Some screenshots overlapped, so crops can include repeated products. Product records in src/data/products.json have image paths assigned for the closest visible matches; verify before publishing.

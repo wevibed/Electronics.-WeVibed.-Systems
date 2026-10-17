@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { waLink } from "../lib/whatsapp";
 
 // Floating glass pill. links: [{ label, href }]
@@ -9,7 +9,7 @@ export default function GlassNav({ site, links = [], cta = "WhatsApp us", messag
       <nav className="nav-pill glass" aria-label="Main">
         <a href="#top" className="flex items-center gap-2 font-display font-bold" style={{ color: "inherit", textDecoration: "none" }}>
           {site.brand.logo ? <img src={site.brand.logo} alt="" className="h-7 w-7 rounded-full object-cover" /> : null}
-          <span>{name}</span>
+          <span><img src="/images/bg-mobiles-navbar-logo.png" alt="B&G Mobile Systems" className="navbar-logo" /></span>
         </a>
         <div className="nav-links">
           {links.map((l) => (
@@ -23,3 +23,4 @@ export default function GlassNav({ site, links = [], cta = "WhatsApp us", messag
     </div>
   );
 }
+

@@ -23,7 +23,7 @@
       "price": 95,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/002-galaxy-a05.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -37,7 +37,7 @@
       "price": 145,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/003-galaxy-a13.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -51,7 +51,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/004-a5w-charger.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -65,7 +65,7 @@
       "price": 25,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/005-metal-cases.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -79,7 +79,7 @@
       "price": 45,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/012-fast-charging-powerb-7.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -93,7 +93,7 @@
       "price": 45,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/009-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -107,7 +107,7 @@
       "price": 80,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/010-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -121,7 +121,7 @@
       "price": 80,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/011-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -135,7 +135,7 @@
       "price": 30,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/013-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -149,7 +149,7 @@
       "price": 50,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/009-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -163,7 +163,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/014-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -177,7 +177,7 @@
       "price": 35,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/015-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -191,7 +191,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/023-aux-cable.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -205,7 +205,7 @@
       "price": 20,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/024-amour-pouch.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -219,7 +219,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/025-usb-data-cable.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -233,7 +233,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/030-charger-type-c.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -247,7 +247,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/031-shutter-glass.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -261,7 +261,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/032-car-mp3-wireless-c.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -275,7 +275,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/036-anti-static-shutte.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -289,7 +289,7 @@
       "price": 8,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/037-privacy-shutter-gl.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -303,7 +303,7 @@
       "price": 25,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/038-nokia-105.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -317,7 +317,7 @@
       "price": 160,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/039-galaxy-tab-a7-lite.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -331,7 +331,7 @@
       "price": 50,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/016-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -345,7 +345,7 @@
       "price": 20,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/018-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -359,7 +359,7 @@
       "price": 80,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/009-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -373,7 +373,7 @@
       "price": 40,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/021-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -387,7 +387,7 @@
       "price": 35,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/009-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -401,7 +401,7 @@
       "price": 30,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/017-magsafe-powerbank.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -415,7 +415,7 @@
       "price": 250,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/050-galaxy-tab-a8.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -429,7 +429,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/051-phone-connector.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -443,7 +443,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/052-selfie-8-ringlight.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -457,7 +457,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/029-magsafe-pouches.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -471,7 +471,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/056-tablet-pouches.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -485,7 +485,7 @@
       "price": 8,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/057-lavalier-micropho.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -499,7 +499,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/058-lightning-for-i-pho.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -513,7 +513,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/059-pzx-type-c-earphon.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -527,7 +527,7 @@
       "price": 30,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/063-power-adpter-65w.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -541,7 +541,7 @@
       "price": 1450,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/064-phone-14-pro-max.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -555,7 +555,7 @@
       "price": 250,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/065-sumsung-m33.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -569,7 +569,7 @@
       "price": 190,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/066-sumsung-a14.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -583,7 +583,7 @@
       "price": 130,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/069-sumsung-a04s.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -597,7 +597,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/070-quick-car-charger.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -611,7 +611,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/071-wireless-mouse.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -625,7 +625,7 @@
       "price": 80,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/072-energy-cube-power.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -639,7 +639,7 @@
       "price": 280,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/073-phone-xr.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -653,7 +653,7 @@
       "price": 300,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/076-a33.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -681,7 +681,7 @@
       "price": 30,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/080-z-flip-pouch.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -695,7 +695,7 @@
       "price": 20,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/081-phone-charger.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -709,7 +709,7 @@
       "price": 20,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/024-amour-pouch.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -723,7 +723,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/086-sumsung-charger.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -737,7 +737,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/087-lightining-to-aux.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -751,7 +751,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/088-silicone-pouches.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -765,7 +765,7 @@
       "price": 20,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/089-magnetic-charger-i.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -793,7 +793,7 @@
       "price": 40,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/097-smart-watch.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -807,7 +807,7 @@
       "price": 60,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/098-smart-power-inver.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -821,7 +821,7 @@
       "price": 280,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/099-airpods-pro.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -835,7 +835,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/103-type-c-connector.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -849,7 +849,7 @@
       "price": 8,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/104-original-car-charg-nm.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -863,7 +863,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/105-original-type-c-cab.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -877,7 +877,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/106-selfie-stick.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -891,7 +891,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/111-tempered-glass.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -905,7 +905,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/112-usb-phone-cable.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -919,7 +919,7 @@
       "price": 60,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/113-airpods-max-headp.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -933,7 +933,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/116-camera-film-prote.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -947,7 +947,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/117-c-type-toc-type-ca.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -961,7 +961,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/118-magsafe-frost-pou.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -975,7 +975,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/070-quick-car-charger.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -989,7 +989,7 @@
       "price": 30,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/122-magnet-sport-head.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1003,7 +1003,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/123-hard-clear-pouch.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1017,7 +1017,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/124-watch-belts-and-sum.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1031,7 +1031,7 @@
       "price": 20,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/125-wireless-microphone.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1045,7 +1045,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/129-original-phone-cables.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1059,7 +1059,7 @@
       "price": 20,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/130-original-phone-12.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1073,7 +1073,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/131-original-phone-he.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1087,7 +1087,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/133-original-phone-he.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1101,7 +1101,7 @@
       "price": 20,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/136-25w-adapter-super-charg.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1115,7 +1115,7 @@
       "price": 8,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/029-magsafe-pouches.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1129,7 +1129,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/140-phone-shutter-gl-a.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1143,7 +1143,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/141-phone-head.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1157,7 +1157,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/137-pouches.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1171,7 +1171,7 @@
       "price": 10,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/143-earphones-connet.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1185,7 +1185,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/031-shutter-glass.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1199,7 +1199,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/148-s10-travel-charger-a.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1213,7 +1213,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/149-classic-cable.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1227,7 +1227,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 4,
-      "image": "",
+      "image": "images/products/150-complete-set-char-a.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1241,7 +1241,7 @@
       "price": 15,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "images/products/151-akg-original-earph.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1255,7 +1255,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 0,
-      "image": "",
+      "image": "images/products/152-sumsung-earphones.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1269,7 +1269,7 @@
       "price": 8,
       "availability": "enq",
       "tint": 1,
-      "image": "",
+      "image": "images/products/155-3-pin-fast-charger-a.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1283,7 +1283,7 @@
       "price": 5,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "images/products/137-pouches.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []
@@ -1297,7 +1297,7 @@
       "price": 8,
       "availability": "enq",
       "tint": 3,
-      "image": "",
+      "image": "images/products/137-pouches.jpg",
       "specs": [],
       "warranty": "Confirm with shop",
       "related": []

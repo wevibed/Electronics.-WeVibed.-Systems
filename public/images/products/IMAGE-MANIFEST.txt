@@ -1,0 +1,3 @@
+Cropped product images extracted from the supplied WhatsApp catalogue screenshots.
+Images are assigned to product records by visible catalogue text; verify product-to-image matches before publishing.
+Products with images assigned: 90 of 93.

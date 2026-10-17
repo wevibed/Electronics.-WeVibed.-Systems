@@ -1,11 +1,11 @@
-import React from "react";
+﻿import React from "react";
 
 // Static hero background avoids scroll-linked JavaScript and layout work.
 export default function Hero({ site, children }) {
   const { hero } = site;
   return (
     <header className="hero" id="top">
-      <div className="hero-bg">
+      <div className={`hero-bg ${hero.image ? "has-image" : ""}`}>
         {hero.image ? <img src={`/${hero.image.replace(/^\//, "")}`} alt={hero.imageAlt || ""} fetchPriority="high" decoding="async" /> : null}
       </div>
       <div className="hero-scrim" />
@@ -18,3 +18,4 @@ export default function Hero({ site, children }) {
     </header>
   );
 }
+

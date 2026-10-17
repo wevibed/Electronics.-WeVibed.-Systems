@@ -1,139 +1,139 @@
 {
-  "status": "client-catalogue",
-  "business": {
-    "name": "B&G Mobiles",
-    "shortName": "B&G Mobiles",
-    "tagline": "Phones, chargers and mobile accessories",
-    "description": "Browse phones and mobile accessories available from B&G Mobiles. Contact the shop to confirm stock and product details.",
-    "currencySymbol": "$",
-    "sampleNote": ""
-  },
-  "contact": {
-    "whatsapp": "263772547621",
-    "displayNumber": "+263 77 254 7621",
-    "address": "Shop Number 4, Galaxy Mall, corner Jason Moyo and First Street, Harare, Zimbabwe",
-    "hours": "08:00 to 18:00",
-    "mapDestination": "Shop Number 4 Galaxy Mall, corner Jason Moyo and First Street, Harare, Zimbabwe"
-  },
-  "brand": {
-    "accent": "#FF8A00",
-    "fontsUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
-    "logo": ""
-  },
-  "seo": {
-    "domain": "electronics--wevibed--systems.pages.dev",
-    "ogImage": ""
-  },
-  "hero": {
-    "image": "",
-    "imageAlt": "",
-    "eyebrow": "Phones / Chargers / Accessories",
-    "headline": "Mobile phones and accessories, all in one place.",
-    "subheadline": "Browse the catalogue and message B&G Mobiles to confirm availability and product details.",
-    "primaryCta": "Browse products",
-    "secondaryCta": "Warranty info"
-  },
-  "nav": {
-    "links": [
-      {
-        "label": "Shop",
-        "href": "#shop"
-      },
-      {
-        "label": "Warranty",
-        "href": "#why"
-      },
-      {
-        "label": "Find us",
-        "href": "#visit"
-      }
-    ],
-    "cta": "Ask on WhatsApp",
-    "message": "Hi B&G Mobiles, I saw your online catalogue and have a question."
-  },
-  "shop": {
-    "heading": "B&G Mobiles catalogue",
-    "searchLabel": "Search products",
-    "searchPlaceholder": "Search phones, chargers, pouches, accessories",
-    "brandLabel": "Brand",
-    "categories": [
-      "Phones",
-      "Chargers & Cables",
-      "Cases & Pouches",
-      "Power Banks",
-      "Screen Protectors",
-      "Car Accessories",
-      "Tablets",
-      "Photo & Video",
-      "Audio",
-      "Computer Accessories",
-      "Wearables",
-      "Power & Inverters"
-    ],
-    "allLabel": "All",
-    "countOne": "product",
-    "countMany": "products",
-    "empty": "No match. Try a model number or ask us on WhatsApp if we can source it.",
-    "photoLabel": "Product photo",
-    "addCompare": "Add to compare",
-    "addedCompare": "Added to compare",
-    "compareSelected": "selected to compare",
-    "compareNow": "Compare now",
-    "clear": "Clear",
-    "compareTitle": "Compare",
-    "specWarranty": "Warranty",
-    "specAvailability": "Availability",
-    "orderCta": "Buy / enquire on WhatsApp",
-    "relatedLabel": "Goes well with",
-    "orderMessage": "Hi {shop}, is the {name} available? Listed at {price}. Please confirm availability. ",
-    "priceSuffix": "",
-    "noPrice": "Ask for price",
-    "viewDetails": "View details",
-    "productEnquiryCta": "Buy / enquire on WhatsApp",
-    "compareOrderCta": "Enquire about these products on WhatsApp",
-    "compareOrderMessage": "Hi {shop}, I would like to ask about these products:\n{items}\nPlease confirm current availability and final prices. Thank you."
-  },
-  "availability": {
-    "in": "In stock",
-    "low": "Low stock",
-    "out": "Sold out",
-    "enq": "Ask availability"
-  },
-  "highlights": [
-    {
-      "title": "Confirm availability",
-      "text": "Message the shop to check current stock before visiting."
-    },
-    {
-      "title": "Mobile phones and tablets",
-      "text": "Browse the available phone and tablet listings."
-    },
-    {
-      "title": "Chargers and accessories",
-      "text": "Explore chargers, cables, power banks, pouches and other accessories."
-    },
-    {
-      "title": "Visit or enquire",
-      "text": "Contact B&G Mobiles for product details and collection information."
-    }
-  ],
-  "visit": {
-    "heading": "Find the shop",
-    "hoursLabel": "Hours",
-    "whatsappLabel": "WhatsApp",
-    "intro": "Visit B&G Mobiles at Galaxy Mall or message the shop to confirm availability.",
-    "exteriorLabel": "Shop exterior",
-    "interiorLabel": "Inside the shop",
-    "mapLabel": "Shop location map",
-    "directionsCta": "Get Directions on Google Maps",
-    "contactCta": "Ask the shop on WhatsApp",
-    "contactMessage": "Hi {shop}, I have a question about visiting the shop.",
-    "photos": {
-      "exterior": "images/shop/shop-exterior.webp",
-      "interior": "images/shop/shop-interior.webp"
-    }
-  },
-  "footer": {
-    "credit": "Built by WeVibed"
-  }
+    "status":  "client-catalogue",
+    "business":  {
+                     "name":  "B\u0026G Mobiles",
+                     "shortName":  "B\u0026G Mobiles",
+                     "tagline":  "Phones, chargers and mobile accessories",
+                     "description":  "Browse phones and mobile accessories available from B\u0026G Mobiles. Contact the shop to confirm stock and product details.",
+                     "currencySymbol":  "$",
+                     "sampleNote":  ""
+                 },
+    "contact":  {
+                    "whatsapp":  "263772547621",
+                    "displayNumber":  "+263 77 254 7621",
+                    "address":  "Shop Number 4, Galaxy Mall, corner Jason Moyo and First Street, Harare, Zimbabwe",
+                    "hours":  "08:00 to 18:00",
+                    "mapDestination":  "Shop Number 4 Galaxy Mall, corner Jason Moyo and First Street, Harare, Zimbabwe"
+                },
+    "brand":  {
+                  "accent":  "#FF8A00",
+                  "fontsUrl":  "https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800\u0026family=IBM+Plex+Sans:wght@400;500;600\u0026family=IBM+Plex+Mono:wght@400;500\u0026display=swap",
+                  "logo":  ""
+              },
+    "seo":  {
+                "domain":  "electronics--wevibed--systems.pages.dev",
+                "ogImage":  ""
+            },
+    "hero":  {
+                 "image":  "images/Futuristic Blue Smartphone Accessory Collage.png",
+                 "imageAlt":  "B\u0026G Mobiles smartphones and accessories",
+                 "eyebrow":  "Phones / Chargers / Accessories",
+                 "headline":  "Mobile phones and accessories, all in one place.",
+                 "subheadline":  "Browse the catalogue and message B\u0026G Mobiles to confirm availability and product details.",
+                 "primaryCta":  "Browse products",
+                 "secondaryCta":  "Warranty info"
+             },
+    "nav":  {
+                "links":  [
+                              {
+                                  "label":  "Shop",
+                                  "href":  "#shop"
+                              },
+                              {
+                                  "label":  "Warranty",
+                                  "href":  "#why"
+                              },
+                              {
+                                  "label":  "Find us",
+                                  "href":  "#visit"
+                              }
+                          ],
+                "cta":  "Ask on WhatsApp",
+                "message":  "Hi B\u0026G Mobiles, I saw your online catalogue and have a question."
+            },
+    "shop":  {
+                 "heading":  "B\u0026G Mobiles catalogue",
+                 "searchLabel":  "Search products",
+                 "searchPlaceholder":  "Search phones, chargers, pouches, accessories",
+                 "brandLabel":  "Brand",
+                 "categories":  [
+                                    "Phones",
+                                    "Chargers \u0026 Cables",
+                                    "Cases \u0026 Pouches",
+                                    "Power Banks",
+                                    "Screen Protectors",
+                                    "Car Accessories",
+                                    "Tablets",
+                                    "Photo \u0026 Video",
+                                    "Audio",
+                                    "Computer Accessories",
+                                    "Wearables",
+                                    "Power \u0026 Inverters"
+                                ],
+                 "allLabel":  "All",
+                 "countOne":  "product",
+                 "countMany":  "products",
+                 "empty":  "No match. Try a model number or ask us on WhatsApp if we can source it.",
+                 "photoLabel":  "Product photo",
+                 "addCompare":  "Add to compare",
+                 "addedCompare":  "Added to compare",
+                 "compareSelected":  "selected to compare",
+                 "compareNow":  "Compare now",
+                 "clear":  "Clear",
+                 "compareTitle":  "Compare",
+                 "specWarranty":  "Warranty",
+                 "specAvailability":  "Availability",
+                 "orderCta":  "Buy / enquire on WhatsApp",
+                 "relatedLabel":  "Goes well with",
+                 "orderMessage":  "Hi {shop}, is the {name} available? Listed at {price}. Please confirm availability. ",
+                 "priceSuffix":  "",
+                 "noPrice":  "Ask for price",
+                 "viewDetails":  "View details",
+                 "productEnquiryCta":  "Buy / enquire on WhatsApp",
+                 "compareOrderCta":  "Enquire about these products on WhatsApp",
+                 "compareOrderMessage":  "Hi {shop}, I would like to ask about these products:\n{items}\nPlease confirm current availability and final prices. Thank you."
+             },
+    "availability":  {
+                         "in":  "In stock",
+                         "low":  "Low stock",
+                         "out":  "Sold out",
+                         "enq":  "Ask availability"
+                     },
+    "highlights":  [
+                       {
+                           "title":  "Confirm availability",
+                           "text":  "Message the shop to check current stock before visiting."
+                       },
+                       {
+                           "title":  "Mobile phones and tablets",
+                           "text":  "Browse the available phone and tablet listings."
+                       },
+                       {
+                           "title":  "Chargers and accessories",
+                           "text":  "Explore chargers, cables, power banks, pouches and other accessories."
+                       },
+                       {
+                           "title":  "Visit or enquire",
+                           "text":  "Contact B\u0026G Mobiles for product details and collection information."
+                       }
+                   ],
+    "visit":  {
+                  "heading":  "Find the shop",
+                  "hoursLabel":  "Hours",
+                  "whatsappLabel":  "WhatsApp",
+                  "intro":  "Visit B\u0026G Mobiles at Galaxy Mall or message the shop to confirm availability.",
+                  "exteriorLabel":  "Shop exterior",
+                  "interiorLabel":  "Inside the shop",
+                  "mapLabel":  "Shop location map",
+                  "directionsCta":  "Get Directions on Google Maps",
+                  "contactCta":  "Ask the shop on WhatsApp",
+                  "contactMessage":  "Hi {shop}, I have a question about visiting the shop.",
+                  "photos":  {
+                                 "exterior":  "images/shop/shop-exterior.webp",
+                                 "interior":  "images/shop/shop-interior.webp"
+                             }
+              },
+    "footer":  {
+                   "credit":  "Built by WeVibed"
+               }
 }
